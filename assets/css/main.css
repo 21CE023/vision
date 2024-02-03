@@ -8,6 +8,7 @@
   --color-default: #364d59;
   --color-primary: rgb(49,87,153);
   --color-secondary: #52565e;
+  --color-white: rgb(255,255,255);
 }
 /* #feb900 */
 /* --color-default: #364d59;
@@ -2557,15 +2558,17 @@ section {
   position: relative;
 }
 
+
 .footer:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.487);
   position: absolute;
   inset: 0;
 }
 
 .footer .footer-content .footer-info {
   margin-bottom: 30px;
+  color: white !important;
 }
 
 .footer .footer-content .footer-info h3 {
@@ -2634,7 +2637,7 @@ section {
 }
 
 .footer .footer-content .footer-links ul a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -2658,3 +2661,43 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
+
+.footer-links>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--color-primary);
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.footer-links a:hover:before,
+  .footer-links li:hover>a:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .footer-links a,
+  .footer-links a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .footer-links a i,
+  .footer-links a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
