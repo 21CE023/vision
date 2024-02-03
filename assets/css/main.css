@@ -30,9 +30,19 @@ body {
 }
 
 header{
-  background-color: #000;
-  color: white !important;
+  background-color: rgb(255, 255, 255);
+  /* filter: brightness(80%); */
+  color: black !important;
+  box-shadow: 10px solid black;
 }
+/* 
+.vision{
+  color: rgb(38, 62, 101) !important;
+}
+
+.build{
+  color: rgb(36,88,148) !important;
+} */
 
 a {
   color: var(--color-primary);
@@ -246,7 +256,7 @@ section {
 .header {
   z-index: 997;
   position: absolute;
-  padding: 30px 0;
+  padding: 15px 0;
   top: 0;
   left: 0;
   right: 0;
@@ -260,7 +270,7 @@ section {
 .header .logo h1 {
   font-size: 24px;
   font-weight: 700;
-  color: #fff;
+  color: #000000;
   margin-bottom: 0;
   font-family: var(--font-primary);
 }
@@ -303,7 +313,7 @@ section {
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -341,7 +351,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #000000;
   }
 
   .navbar .dropdown ul {
@@ -655,7 +665,7 @@ section {
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: rgb(0,123,192);
 }
 
 @keyframes animate-loading {
@@ -705,9 +715,12 @@ section {
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  padding: 40px;
+  padding: 10px 10px 10px 18px;
   background: #fff;
   height: 100%;
+  border-radius: 14px;
+  box-shadow: #000;
+  margin: 0px 0px 0px -20px;
 }
 
 .services .service-item .icon {
@@ -742,19 +755,18 @@ section {
 .services .service-item h3 {
   color: var(--color-default);
   font-weight: 700;
-  margin: 0 0 20px 0;
+  margin: 0 0 0px 0;
   padding-bottom: 8px;
-  font-size: 22px;
+  font-size: 16px;
   position: relative;
   display: inline-block;
-  border-bottom: 4px solid #ebebed;
+  border-bottom: 2px solid #ebebed;
   transition: 0.3s;
 }
 
 .services .service-item p {
-  line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  margin: 10px 7px 10px 15px;
 }
 
 .services .service-item .readmore {
@@ -2558,7 +2570,8 @@ section {
   color: #fff;
   background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
-  font-size: 14px;
+  font-family: var(--font-primary);
+  font-size: 10px;
   padding: 80px 0 60px 0;
   position: relative;
 }
@@ -2566,7 +2579,7 @@ section {
 
 .footer:before {
   content: "";
-  background: rgba(0, 0, 0, 0.487);
+  background: rgba(0, 0, 0, 0.677);
   position: absolute;
   inset: 0;
 }
@@ -2574,15 +2587,17 @@ section {
 .footer .footer-content .footer-info {
   margin-bottom: 30px;
   color: white !important;
+  
+
 }
 
 .footer .footer-content .footer-info h3 {
-  font-size: 28px;
+  font-size: 20px;
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 400;
+  /* text-transform: uppercase; */
 }
 
 .footer .footer-content .footer-info h3 span {
@@ -2596,6 +2611,21 @@ section {
   font-family: var(--font-primary);
   color: #fff;
 }
+
+.footer-info a{
+  color: rgb(255, 255, 255) !important;
+  
+}
+.footer-info a:hover{
+  color:rgb(0, 204, 255) !important;
+  
+}
+
+.footer-info .phone{
+  font-weight: 300;
+}
+
+
 
 .footer .footer-content .social-links a {
   font-size: 18px;
@@ -2616,8 +2646,8 @@ section {
 }
 
 .footer .footer-content h4 {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   color: #fff;
   position: relative;
   padding-bottom: 12px;
@@ -2646,6 +2676,8 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .footer .footer-content .footer-links ul a:hover {
@@ -2660,11 +2692,11 @@ section {
 .footer .footer-legal .credits {
   padding-top: 4px;
   font-size: 13px;
-  color: #fff;
+  color: rgb(0, 204, 255);
 }
 
 .footer .footer-legal .credits a {
-  color: var(--color-primary);
+  color: rgb(0, 157, 255);
 }
 
 .footer-links>ul>li>a:before {
