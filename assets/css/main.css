@@ -1,28 +1,18 @@
-/**
-* Template Name: UpConstruction
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
 }
 
-/* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
+  --color-primary: rgb(49,87,153);
   --color-secondary: #52565e;
 }
+/* #feb900 */
+/* --color-default: #364d59;
+--color-primary: rgb(49,87,153);
+--color-secondary: #52565e; */
 
 /* Smooth scroll behavior */
 :root {
@@ -60,6 +50,7 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+
 section {
   padding: 80px 0;
   overflow: hidden;
@@ -184,13 +175,14 @@ section {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--color-secondary);
+  /* color: var(--color-secondary); */
+  color: #ffffff;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background: #ffc732;
-  color: #fff;
+  background: rgb(0,123,192);
+  color: #ffffff;
 }
 
 .scroll-top.active {
