@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall Builder</title>
+  <link href="assets/img/favicon-32x32.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+
+        <h1>&nbsp;&nbsp;VISION BuildTech</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="calc.html" class="active">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <div class="containerCALC">
+    <h1>Wall Builder</h1>
+    <div class="input-container">
+      <label for="plot-length">Enter the plot length (in feet):</label>
+      <input type="number" id="plot-length">
+    </div>
+    <div class="input-container">
+      <label for="plot-width">Enter the plot width (in feet):</label>
+      <input type="number" id="plot-width">
+    </div>
+    <div class="input-container">
+      <label for="wall-height">Enter the wall height (in feet):</label>
+      <input type="number" id="wall-height">
+    </div>
+    <div class="input-container">
+      <label for="wall-count">Enter the number of inner walls:</label>
+      <input type="number" id="wall-count">
+    </div>
+    <div id="inner-wall-details">
+      <table id="inner-wall-table">
+        <thead>
+          <tr>
+            <th>Inner Wall</th>
+            <th>Length (feet)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Inner wall dimensions will be added dynamically here -->
+        </tbody>
+      </table>
+    </div>
+    <button id="calculate-blocks">Calculate Blocks for Walls</button>
+    <div id="result" class="output-table">
+      <!-- Output table will be displayed here -->
+    </div>
+  </div>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="footer-head">
+          <h3 style="font-size: 24px !important; ">Vision Build Tech</h3>
+        </div>
+        <hr>
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <p>
+                <b>Office & Plant Address</b> <br>
+                Surevey No. 120 P1/P1,
+                At. Jabulpur,<br>
+                Tankara-363650 (Gujrat)INDIA.<br><br>
+              <h6> <u> Phone:</u></h6>
+              <div class="phone">
+                <p>Nayan Panara- Account</p><a href="tel:+919624990898">+91 96249 90898</a>
+                <br>
+                <p>Nilesh Bhoraniya - Marketing</p><a href="tel:+918264099890">+91 82640 99890</a>
+                <br>
+                <p>Ashvin Sherasiya - Production</p><a href="tel:+919558181788">+91 95581 81788</a>
+                <br><br>
+                Email: <a href="mailto:visionbuildtech2023@gmail.com">visionbuildtech2023@gmail.com</a>
+              </div>
+
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="calc.html">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Loaction</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72968.41372035164!2d70.71503874621683!3d22.621390129162545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959eb6bafd94b35%3A0x4a6774420a5ccecc!2sVISION%20BUILDTECH!5e0!3m2!1sen!2sin!4v1706335080881!5m2!1sen!2sin"
+              width="350" height="290" style="border:0 ; border-radius: 5px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Vision BuildTech </span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <a href="#">Aksh & Jyot Technologies</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <script src="./assets/js/calc.js"></script>
+
+</body>
+
+</html>

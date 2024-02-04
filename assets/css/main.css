@@ -189,7 +189,32 @@ section {
   transition: all 0.4s;
 }
 
+
+
+.brochure {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 0px;
+  bottom: 300px;
+  z-index: 1;
+  background:red;
+  width: 40px;
+  height: 210px;
+  border-radius: 20px 0px 0px 20px;
+  transition: all 0.4s;
+  transition: background-color 1s ease; 
+  transition: width 0.7s ease; 
+}
+
 .scroll-top i {
+  font-size: 24px;
+  /* color: var(--color-secondary); */
+  color: #ffffff;
+  line-height: 0;
+}
+
+.brochure i {
   font-size: 24px;
   /* color: var(--color-secondary); */
   color: #ffffff;
@@ -201,9 +226,31 @@ section {
   color: #ffffff;
 }
 
+.brochure:hover {
+  background: rgb(0,123,192);
+  color: #ffffff;
+  width: 60px;
+}
+
+.brochure.active {
+  content: "";
+  visibility: visible;
+  opacity: 1;
+}
+
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+.brochureText{
+  font-family: var(--font-default);
+    z-index: 2;
+    font-size: 15px;
+    color: white;
+    list-style: none;
+    margin: -1px 25px 0px 0px;
+
 }
 
 /*--------------------------------------------------------------
@@ -449,10 +496,12 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.8);
+    /* background: rgba(0, 0, 0, 0.8); */
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    background: rgba(49, 87, 153, 0.879) !important;
+
   }
 
   .navbar a,
@@ -482,6 +531,7 @@ section {
   .navbar .active:focus,
   .navbar li:hover>a {
     color: #fff;
+    /* background: rgba(49, 87, 153, 0.43) !important; */
   }
 
   .navbar .dropdown ul,
@@ -492,6 +542,7 @@ section {
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
     border: 1px solid #222428;
+
   }
 
   .navbar .dropdown>.dropdown-active,
@@ -501,13 +552,15 @@ section {
 
   .mobile-nav-show {
     position: relative;
-    color: #fff;
+    color: var(--color-primary);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
     z-index: 9999;
     padding-right: 10px;
+
+
   }
 
   .mobile-nav-hide {
@@ -535,6 +588,7 @@ section {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
+    /* background: rgba(49, 87, 153, 0.471); */
     z-index: 9996;
   }
 }

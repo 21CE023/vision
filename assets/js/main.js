@@ -91,12 +91,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+  const brochureVariable = document.querySelector('.brochure');
+  if (brochureVariable) {
+    const togglebrochureVariable = function() {
+      window.scrollY > 200 ? brochureVariable.classList.add('active') : brochureVariable.classList.remove('active');
+    }
+    window.addEventListener('scroll', togglebrochureVariable);
+    window.addEventListener('load', togglebrochureVariable);
+    // brochureVariable.addEventListener('click', window.scrollTo({
+    //   top: 0,
+    //   behavior: 'smooth'
+    // }));
+  }
   /**
    * Initiate glightbox
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
+  
 
   /**
    * Porfolio isotope and filter
